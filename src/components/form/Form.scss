@@ -1,0 +1,38 @@
+form{
+    width: 600px;
+    min-height: 700px;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px;
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px whitesmoke;
+    overflow: auto;
+    > div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+        > input{
+            width: 80%;
+            height: 40px;
+            border-radius: 5px;
+            border-color: #BA55D3;
+        }
+    }
+    >button{
+        width: 120px;
+        height: 30px;
+        background-color: #BA55D3;
+        color:whitesmoke;
+        box-shadow: 2px 2px 10px whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
