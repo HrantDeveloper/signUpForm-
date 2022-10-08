@@ -17,7 +17,7 @@ const deleteCard = useCallback(async(id)=>{
       setLoading(false);//It is done for a fake loading effect 
     },1000);
     setUsers(users.filter(item => item.id !== id))
-    //It is done for not sending one more request to server 
+    //It is done for not sending one more Get-request to server 
   }
   catch(err){
     console.log(err);
@@ -42,9 +42,10 @@ if(users.length !== 0 ){
        {users.map((item,index)=>{
        return(
         <div key={index} className="user-card">
-          <div className="user-card-del"
-          onClick={()=>{
-            deleteCard(item.id)
+          <div 
+            className="user-card-del"
+            onClick={()=>{
+              deleteCard(item.id)
             }}>
             <GrClose/>
             </div>
@@ -66,7 +67,7 @@ if(users.length !== 0 ){
           </div>
           <div className="user-card-row">
             <h3>Phone:</h3>
-            <p>{item.phone}</p>
+            <p>({item.phone.slice(0, 3)}) {item.phone.slice(4, 7)}-{item.phone.slice(5, 9)} </p>
           </div>
         </div>
        )

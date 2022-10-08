@@ -1,3 +1,20 @@
 {
-  "users": []
+  "users": [
+    {
+      "firstName": "hrant",
+      "lastName": "sargsyan",
+      "dateOfBirth": "1994-01-01",
+      "email": "hrantsargsyan6@gmail.com",
+      "phone": "7777777777",
+      "id": 2
+    },
+    {
+      "firstName": "asdasdasd",
+      "lastName": "asdasd",
+      "dateOfBirth": "1111-11-11",
+      "email": "hrantsargsyan6@gmail.com",
+      "phone": "1111111111",
+      "id": 3
+    }
+  ]
 }
